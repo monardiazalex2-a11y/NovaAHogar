@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaHogar | Inmobiliaria Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0d1b2a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #1b263b;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00b4d8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #1b263b;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1b263b;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🏠 NovaHogar</div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Digitalización</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Tu futuro comienza en casa</h1>
+    <p>La inmobiliaria del futuro, hoy</p>
+    <button class="btn">Ver propiedades</button>
+</section>
+
+<section class="section">
+    <h2>Servicios</h2>
+    <div class="cards">
+        <div class="card">Compra de viviendas</div>
+        <div class="card">Venta de propiedades</div>
+        <div class="card">Alquiler</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Transformación Digital</h2>
+    <div class="cards">
+        <div class="card">Página web y redes sociales</div>
+        <div class="card">CRM inmobiliario</div>
+        <div class="card">Tours virtuales 3D</div>
+        <div class="card">Automatización de procesos</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contacto</h2>
+    <p>info@novahogar.com</p>
+    <p>+34 123 456 789</p>
+</section>
+
+<footer>
+    <p>© 2026 NovaHogar</p>
+</footer>
+
+</body>
+</html>
